@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    {% include head.html %}
+    <style type="text/css">
+      {% capture include_to_scssify %}
+        {% include critical.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+    </style>
+    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+    {% seo title=false %}
+  </head>
+
+  <body>
+
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+
+    <script src="/js/loadCSSpolyfilled.min.js"></script>
+  </body>
+
+</html>

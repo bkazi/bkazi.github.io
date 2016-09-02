@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Serif|Space+Mono|Titillium+Web:600';
+
+$base-font: 'Noto Serif', serif;
+$accent-font: 'Space Mono', monospace;
+$heading-font: 'Titillium Web', sans-serif;
+
+/*! Used Type Nugget v0.2.2 | typenugget.com (took some tweaking later)*/
+body {
+	font-family: $base-font;
+	color: $black;
+	background-color: $white;
+	line-height: 1.7;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 600;
+	line-height: 1.2;
+	font-family: $heading-font;
+}
+
+h1 {
+	font-size: 5.06em;
+	font-weight: 300;
+	margin-top: 0.53em;
+	margin-bottom: 0.53em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 3.33em;
+	font-weight: 300;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+h3 {
+	font-size: 2.25em;
+	font-weight: 600;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+h4 {
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+}
+
+h5 {
+	font-size: 1.06em;
+	font-weight: 700;
+	margin-top: 0.94em;
+	margin-bottom: 0.94em;
+}
+
+h6 {
+	font-size: 1em;
+	font-weight: 700;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	font-family: $base-font;
+	font-size: 1em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: normal;
+	font-family: $accent-font;
+	font-size: 1em;
+	font-weight: 600;
+	color: $red;
+}
+
+a {
+	color: $silver;
+	font-family: $accent-font;
+	font-size: 0.95em;
+	font-weight: 600;
+	font-style: normal;
+	text-decoration: underline;
+
+  &:hover {
+    font-family: $accent-font;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: $silver;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $silver;
+  }
+}
+
+ul,ol {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	padding-left: 1.1em;
+}
+
+li {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+code {
+  font-family: $accent-font;
+}
