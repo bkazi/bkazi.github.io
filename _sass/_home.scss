@@ -40,6 +40,7 @@
 }
 
 .build {
+  display: posts;
   position: relative;
   padding: 10px;
   width: 100%;
@@ -48,6 +49,14 @@
   opacity: 0;
   transform: translateX(-10%);
   transition: opacity 0.35s ease-in-out, transform 0.25s ease-in;
+  color: $white;
+  text-decoration: none;
+  &:active {
+    color: $white;
+  }
+  &:visited {
+    color: $white;
+  }
 }
 
 @media (min-width: 740px) {
