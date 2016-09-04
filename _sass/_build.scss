@@ -1,0 +1,60 @@
+.i-link {
+  text-decoration: none;
+}
+
+.i-link--white {
+  color: $white;
+  &:visited {
+    color: $white;
+  }
+}
+
+.i-link--black {
+  color: $black;
+  &:visited {
+    color: $black;
+  }
+}
+
+.build {
+  z-index: 1;
+}
+
+.build--visible {
+  opacity: 1;
+  transform: none;
+}
+
+.about {
+  color: $white;
+  background: darken($silver, 20%);
+  background-image: url("/images/about-me.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__links {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+}
+
+.about__resume-link {
+  display: inline-block;
+  padding: 5px;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid $white;
+  &:hover {
+    color: $white;
+  }
+  &:visited {
+    color: $white;
+  }
+}
+
+.posts {
+  color: $white;
+  background: darken($red, 5%);
+}

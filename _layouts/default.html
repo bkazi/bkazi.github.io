@@ -9,22 +9,23 @@ layout: compress
     {% include head.html %}
     <style type="text/css">
       {% capture include_to_scssify %}
-        {% include critical.scss %}
+        {% include critical_home.scss %}
       {% endcapture %}
       {{ include_to_scssify | scssify }}
     </style>
     <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+    <script src="/js/loadCSSpolyfilled.min.js"></script>
+    <script src="https://use.fontawesome.com/2cd61c29aa.js"></script>
     {% seo title=false %}
   </head>
 
   <body>
 
-    <main class="page-content" aria-label="Content">
+    <main aria-label="Content">
       {{ content }}
     </main>
 
-    <script src="/js/loadCSSpolyfilled.min.js"></script>
   </body>
 
 </html>

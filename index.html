@@ -2,22 +2,30 @@
 layout: default
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="intro">
+  <div class="intro__content">
+    <h2 class="intro__heading">Hi, I'm <em>Bilal Kazi</em> and I study <em>Computer Science</em></h2>
+    <p class="intro_paragraph">I like designing and building apps and experiences.</p>
+  </div>
 </div>
+
+<div class="container content">
+  <div class="build about">
+    <h3>About me</h3>
+    <p></p>
+    <div class="about__links">
+      <a class="i-link i-link--white" href="https://uk.linkedin.com/in/bkazi">
+        <i class="fa fa-linkedin fa-2x"></i>
+      </a>
+      <a class="i-link i-link--white" href="https://github.com/bkazi">
+        <i class="fa fa-github fa-2x"></i>
+      </a>
+      <!--<a class="about__resume-link" href="/resume/">R&eacute;sum&eacute;</a>-->
+    </div>
+  </div>
+  <div class="build posts">
+    <h3>Scotland Yard - Case Study</h3>
+  </div>
+</div>
+
+<script src="/js/main.js"></script>

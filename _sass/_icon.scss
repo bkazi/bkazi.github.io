@@ -1,0 +1,27 @@
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-2x {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.icon--black svg {
+  fill: $black;
+}
+
+.icon-white svg {
+  fill: $white;
+}
+
+.icon-behance {
+    background-image: url("/images/behance.svg");
+}
+
+.icon-linkedin {
+    background-image: url("/images/linkedin.svg");
+}

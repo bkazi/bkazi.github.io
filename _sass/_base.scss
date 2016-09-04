@@ -6,5 +6,9 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 @import 'palette';
 @import 'fonts';
