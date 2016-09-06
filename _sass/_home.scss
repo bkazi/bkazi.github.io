@@ -50,13 +50,7 @@
   transform: translateX(-10%);
   transition: opacity 0.35s ease-in-out, transform 0.25s ease-in;
   color: $white;
-  text-decoration: none;
-  &:active {
-    color: $white;
-  }
-  &:visited {
-    color: $white;
-  }
+  overflow: hidden;
 }
 
 @media (min-width: 740px) {

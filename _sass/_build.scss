@@ -17,7 +17,43 @@
 }
 
 .build {
+  background-size: cover;
   z-index: 1;
+}
+
+.build--link {
+  text-decoration: none;
+  &:active {
+    color: $white;
+  }
+  &:visited {
+    color: $white;
+  }
+  &::after {
+    content: "\f178";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: darken($silver, 40%);
+    box-shadow: -2px 0px 3px 1px rgba(0,0,0,0.2);
+    transform: translateX(110%);
+    transition: transform 0.2s ease-in;
+  }
+  &:hover {
+    &::after {
+      transform: none;
+    }
+  }
 }
 
 .build--visible {
@@ -27,16 +63,16 @@
 
 .about {
   color: $white;
-  background: darken($silver, 20%);
+  background-color: darken($silver, 20%);
   background-image: url("/images/about-me.svg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.about__links {
+.build__links {
   position: absolute;
   left: 20px;
   bottom: 10px;
+  font-size: 1.2em;
 }
 
 .about__resume-link {
@@ -56,5 +92,9 @@
 
 .posts {
   color: $white;
-  background: darken($red, 5%);
+  background-color: darken($red, 5%);
+}
+
+.scotland-yard {
+  background-image: url("/images/scotlandYard.svg");
 }
