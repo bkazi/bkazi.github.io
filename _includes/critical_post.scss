@@ -1,0 +1,17 @@
+@import "base";
+@import "common";
+
+article {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.post-image {
+  min-width: 75%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.post-header {
+  padding-left: 10px;
+}

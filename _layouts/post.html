@@ -1,0 +1,45 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-GB" }}">
+
+  <head>
+    {% include head.html %}
+    <style type="text/css">
+      {% capture include_to_scssify %}
+        {% include critical_post.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+    </style>
+    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
+    <script src="/js/loadCSSpolyfilled.min.js"></script>
+    <script src="https://use.fontawesome.com/2cd61c29aa.js"></script>
+    {% seo title=false %}
+  </head>
+
+  <body>
+
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">{{ page.title | escape }}</h2>
+        <h5 class="post-meta">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: "%b %-d, %Y" }}
+          </time>
+          {% if page.author %} 
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+          {% endif %}
+        </h5>
+      </header>
+      
+      <div class="post-content container" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </article>
+
+  </body>
+
+</html>
