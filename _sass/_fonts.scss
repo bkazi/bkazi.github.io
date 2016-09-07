@@ -1,8 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Noto+Serif|Space+Mono|Titillium+Web:600';
+@import 'https://fonts.googleapis.com/css?family=Noto+Serif|Space+Mono|Roboto:600';
 
 $base-font: 'Noto Serif', serif;
 $accent-font: 'Space Mono', monospace;
-$heading-font: 'Titillium Web', sans-serif;
+$heading-font: 'Roboto', sans-serif;
 
 /*! Used Type Nugget v0.2.2 | typenugget.com (took some tweaking later)*/
 body {
@@ -24,7 +24,6 @@ h1 {
 	font-weight: 300;
 	margin-top: 0.53em;
 	margin-bottom: 0.53em;
-	text-transform: uppercase;
 }
 
 h2 {

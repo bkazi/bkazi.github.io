@@ -1,6 +1,9 @@
-.scotland-yard--link {
+.card--link {
   color: $white;
   text-decoration: none;
+  &:hover {
+    color: $white;
+  }
   &:active {
     color: $white;
   }
