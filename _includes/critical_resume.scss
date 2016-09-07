@@ -1,0 +1,125 @@
+:root {
+  font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+$black: #070C0C;
+$silver: #485665;
+$white: #FFFEFE;
+$red: #8E7C93;
+$green: #D0A5C0;
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Crete+Round';
+
+$base-font: 'Open Sans', sans-serif;
+$heading-font: 'Crete Round', serif;
+
+/*! Used Type Nugget v0.2.2 | typenugget.com (took some tweaking later)*/
+body {
+	font-family: $base-font;
+	color: $black;
+	background-color: $white;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 600;
+	line-height: 1.2;
+	font-family: $heading-font;
+}
+
+h1 {
+	font-size: 1.95em;
+	font-weight: 300;
+	margin-top: 0.53em;
+	margin-bottom: 0.53em;
+}
+
+h2 {
+	font-size: 1.7em;
+	font-weight: 300;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+h3 {
+	font-size: 1.22em;
+	font-weight: 600;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
+}
+
+h4 {
+	font-size: 1.15em;
+	font-weight: 600;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+}
+
+h5 {
+	font-size: 1em;
+	font-weight: 400;
+	margin-top: 0.94em;
+	margin-bottom: 0.94em;
+}
+
+h6 {
+	font-size: 0.85em;
+	font-weight: 400;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	font-family: $base-font;
+	font-size: 1em;
+	font-weight: 400;
+	font-style: normal;
+}
+
+strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: normal;
+	font-family: $base-font;
+	font-size: 0.92em;
+	font-weight: 600;
+	color: $red;
+}
+
+a {
+	color: $silver;
+	font-family: $base-font;
+	font-size: 0.95em;
+	font-weight: 600;
+	font-style: normal;
+	text-decoration: underline;
+
+  &:hover {
+    font-family: $base-font;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: $silver;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $silver;
+  }
+}
+
+@import "common";
+@import "resume";

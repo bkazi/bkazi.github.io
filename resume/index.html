@@ -1,0 +1,170 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-GB" }}">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFFAFA">
+    <title>Resume</title>
+    <style type="text/css">
+      {% capture include_to_scssify %}
+        {% include critical_resume.scss %}
+      {% endcapture %}
+      {{ include_to_scssify | scssify }}
+    </style>
+    {% seo title=false %}
+  </head>
+
+  <body>
+
+    <main class="container" aria-label="Content">
+      <div class="details">
+        <h1 class="name">Bilal Kazi</h1>
+        <p class="info">
+          email: <a href="mailto:bilalahmedkazi@hotmail.com">bilalahmedkazi@hotmail.com</a><br>
+          LinkedIn: <a href="https://uk.linkedin.com/in/bkazi">uk.linkedin.com/in/bkazi</a> | Github: <a href="https://www.github.com/bkazi">bkazi</a><br>
+          Mobile: (+44) 7480681654
+        </p>
+      </div>
+      <div>
+        <h3 class="heading">Education</h3>
+        <ul>
+          <li>
+            <div class="list__details">
+              <strong>MEng Computer Science</strong>
+              <span class="time">September 2015 - October 2016</span>
+            </div>
+            <p>
+              <em>Completed Year 1 with a 2:1</em><br>
+              University of Bristol - Bristol, United Kingdom
+            </p>
+          </li>
+          <li>
+            <div class="list__details">
+              <strong>High School Examination</strong>
+              <span class="time">June 2013 - May 2015</span>
+            </div>
+            <p>
+              <em>Distinction (90%)</em><br>
+              Indian School Certificate (ISC)<br>
+              Jamnabai Narsee School - Mumbai, India
+            </p>
+          </li>
+          <li>
+            <div class="list__details">
+              <strong>Secondary School Examination</strong>
+              <span class="time">June 2009 - May 2013</span>
+            </div>
+            <p>
+              <em>Distinction (92%)</em><br>
+              Indian Certificate of Secondary Education (ICSE)<br>
+              Jamnabai Narsee School - Mumbai, India
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="heading">Projects</h3>
+        <ul>
+          <li>
+            <div class="list__details">
+              <strong><a href="{% post_url 2016-09-04-scotland-yard %}">Scotland Yard Game Project</a></strong>
+            </div>
+            <p>
+              A two member team worked on a project using Java that involved creation of the model of the Scotland Yard board game to complete the provided MVC framework and yield a playable version of the game.<br>
+              The second part of the project was to design an AI system to play the game and so we employed the Monte Carlo algorithm to pick the best move from the game tree. Additionally used ThreadPools and other classes from the Concurrent package to improve performance along with heuristically scoring each board.
+            </p>
+          </li>
+          <li>
+            <div class="list__details">
+              <strong><a href="https://www.manorjcr.co.uk">Manor Hall JCR Website</a></strong>
+            </div>
+            <p>
+              Created the website for the Manor Hall Junior Common Room Committee, which is in charge of the activities for the residents of the Manor Hall of Residence of the University of Bristol. Used the Polymer framework to create custom web components and pull data from a Firebase database. It also uses a ServiceWorker where supported to provide offline capabilities.
+            </p>
+          </li>
+          <li>
+            <div class="list__details">
+              <strong><a href="http://www.betteringmagazine.co.uk">Bettering Magazine Website</a></strong>
+            </div>
+            <p>
+              Created the website of Bettering Magazine, a non-profit magazine based in Bristol which helps local charities.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="heading">Involvements</h3>
+        <ul>
+          <li>
+            <div class="list__details">
+              <strong><a href="http://www.digimakers.co.uk">DigiMakers Bristol</a></strong>
+              <span class="time">October 2015 - present</span>
+            </div>
+            <p>
+              Conducts workshops for children aged 7 – 17 where they are given an introduction on creating websites using Bootstrap
+            </p>
+          </li>
+          <li>
+            <div class="list__details">
+              <strong>International Representative of Manor JCR Committee</strong>
+              <span class="time">May 2016 - April 2017</span>
+            </div>
+            <p>
+              Part of the committee that handles the social and recreational activities of around 300 undergraduate residents of Manor Hall in Bristol, with a special responsibility of the integration of international students in the community.
+            </p>
+          </li>
+          <li>
+            <div class="list__details">
+              <strong>Volunteer at Anant Vikas - Mind Genius Trust Initiative</strong>
+              <span class="time">June 2014 - January 2014</span>
+            </div>
+            <p>
+              Student volunteer at Anant Vikas who along with United Nation Volunteers addresses challenges of extreme poverty and rural development in India
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="heading">Training</h3>
+        <ul>
+          <li>
+            <strong>M101JS: MongoDB for Node.js developers</strong>
+            <p>MongoDB University</p>
+          </li>
+          <li>
+            <strong>Introduction to R</strong>
+            <p>Micrsoft (edX)</p>
+          </li>
+          <li>
+            <strong>Ruby on Rails: An Introduction</strong>
+            <p>Johns Hopkins University (Coursera)</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="heading">Skills</h3>
+        <ul>
+          <li>
+            <p><strong>Proficient:</strong> Java, C, HTML & CSS (Sass), JavaScript, MongoDB, Git</p>
+          </li>
+          <li>
+            <p><strong>Familiar:</strong> R, Ruby, Python, Haskell, PHP, SQL</p>
+          </li>
+          <li>
+            <p><strong>SDK and Libraries:</strong> Android, Express, Mocha/Chai</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <a class="pdf" href="./Resume.pdf">
+      View as PDF
+    </a>
+  </body>
+
+</html>
