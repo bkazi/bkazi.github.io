@@ -1,8 +1,17 @@
+.icon-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+}
+
 .icon {
   display: inline-block;
   width: 16px;
   height: 16px;
-  color: none;
 }
 
 .icon--2x {
