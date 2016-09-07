@@ -2,10 +2,10 @@
   display: inline-block;
   width: 16px;
   height: 16px;
+  color: none;
 }
 
-.icon-2x {
-  display: inline-block;
+.icon--2x {
   width: 32px;
   height: 32px;
 }
@@ -14,14 +14,6 @@
   fill: $black;
 }
 
-.icon-white svg {
+.icon--white svg {
   fill: $white;
-}
-
-.icon-behance {
-    background-image: url("/images/behance.svg");
-}
-
-.icon-linkedin {
-    background-image: url("/images/linkedin.svg");
 }
