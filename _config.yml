@@ -32,3 +32,4 @@ sass:
   style: compressed
 gems:
   - jekyll-seo-tag
+google_analytics: UA-74425255-3
