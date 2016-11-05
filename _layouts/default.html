@@ -13,17 +13,14 @@ layout: compress
       {% endcapture %}
       {{ include_to_scssify | scssify }}
     </style>
-    <link rel="preload" href="/css/main.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/main.css"></noscript>
-    <script src="/js/loadCSSpolyfilled.min.js"></script>
     {% seo title=false %}
   </head>
 
   <body>
-
     <main aria-label="Content">
       {{ content }}
     </main>
+    <link rel="stylesheet" href="/css/main.css">
     {% include google-analytics.html %}
   </body>
 
