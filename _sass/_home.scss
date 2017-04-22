@@ -39,8 +39,6 @@
   padding-right: 15px;
   color: white;
   font-weight: 600;
-  // background: linear-gradient(60deg, rgba(255, 255, 255, 0) 65%, #8d4982 0%);
-  background: linear-gradient(-65deg, #8d4982 30%, rgba(255, 255, 255, 0) 0%);
 
   em {
     color: white;
@@ -81,6 +79,48 @@
   }
   h2.intro__heading {
     font-size: 2.5em;
+  }
+}
+
+.intro__resume-link {
+  position: relative;
+  color: #8d4982;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 5px 20px;
+  border: solid 3px #8d4982;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+  cursor: pointer;
+
+  &:visited {
+    color: #8d4982;
+  }
+
+  &:hover {
+    font-size: 1.1rem;
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.intro__links {
+  position: relative;
+  margin-top: 22px;
+
+  a {
+    margin-right: 5px;
+    cursor: pointer;
+
+    span {
+    transition: transform 100ms ease-in-out;
+    }
+
+    span:hover {
+      transform: scale(1.3);
+    }
   }
 }
 
