@@ -70,3 +70,20 @@
   background-size: cover;
   background-color: $silver;
 }
+
+.medium-card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  background-image: url("/images/medium.svg");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 100% 90%;
+  background-color: $green;
+
+  @media (min-width: 700px) {
+    flex-grow: 1;
+    width: 100px;
+  }
+}

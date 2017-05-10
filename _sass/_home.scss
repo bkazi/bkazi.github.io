@@ -134,3 +134,12 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.content--horizontal {
+  width: 100%;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+}
