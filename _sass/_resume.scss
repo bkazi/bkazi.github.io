@@ -76,6 +76,15 @@ p {
   }
 }
 
+.bullets {
+  padding-left: 20px;
+  list-style: disc;
+
+  > li {
+    margin-bottom: 2px;
+  }
+}
+
 .pdf {
   display: flex;
   justify-content: center;
@@ -106,6 +115,9 @@ p {
 }
 
 @media print {
+  .resume {
+    font-size: 10px;
+  }
   ul {
     padding-left: 10px;
     margin-top: 3px;
