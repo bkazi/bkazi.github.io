@@ -20,6 +20,8 @@ img.src = lazyBg.dataset.img;
 img.onload = () => {
     lazyBg.insertAdjacentElement('afterend', newBg);
     requestAnimationFrame(() => {
-        newBg.style.opacity = 1;
-    })
+        requestAnimationFrame(() => {
+            newBg.style.opacity = 1;
+        });
+    });
 };
