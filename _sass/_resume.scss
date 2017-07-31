@@ -71,6 +71,10 @@ p {
   margin-bottom: 1em;
   padding-left: 40px;
 
+  p {
+    break-inside: avoid;
+  }
+
   @media screen and (min-width: 650px) {
     column-count: 2;
   }
