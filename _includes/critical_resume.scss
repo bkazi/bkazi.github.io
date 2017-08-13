@@ -12,15 +12,16 @@ body {
 
 $black: #070606;
 $grey: #595959;
-$silver: #485665;
+$silver: #695e6e;
 $white: #FFFEFE;
 $red: #8E7C93;
 $green: #D0A5C0;
 
-@import 'https://fonts.googleapis.com/css?family=Lato:400,600|Crete+Round';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,600|Playfair+Display:400|Roboto:500';
 
 $base-font: 'Lato', sans-serif;
-$heading-font: 'Crete Round', serif;
+$heading-font: 'Playfair Display', serif;
+$sub-heading-font: 'Roboto', sans-serif;
 
 /*! Used Type Nugget v0.2.2 | typenugget.com (took some tweaking later)*/
 body {
