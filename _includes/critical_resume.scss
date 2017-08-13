@@ -10,21 +10,22 @@ body {
   margin: 0;
 }
 
-$black: #070C0C;
+$black: #070606;
+$grey: #595959;
 $silver: #485665;
 $white: #FFFEFE;
 $red: #8E7C93;
 $green: #D0A5C0;
 
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Crete+Round';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,600|Crete+Round';
 
-$base-font: 'Open Sans', sans-serif;
+$base-font: 'Lato', sans-serif;
 $heading-font: 'Crete Round', serif;
 
 /*! Used Type Nugget v0.2.2 | typenugget.com (took some tweaking later)*/
 body {
 	font-family: $base-font;
-	color: $black;
+	color: $grey;
 	background-color: $white;
 	line-height: 1.5;
 	font-weight: 400;
@@ -34,6 +35,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 600;
 	line-height: 1.2;
 	font-family: $heading-font;
+	color: $black;
 }
 
 h1 {

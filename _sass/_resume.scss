@@ -38,6 +38,11 @@ a {
   border-bottom: 2px solid $red;
 }
 
+strong {
+  font-family: $base-font;
+  color: $black;
+}
+
 ul {
   list-style: none;
 }
@@ -59,10 +64,17 @@ p {
   }
 }
 
+.secondary {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #888;
+}
+
 .time {
   font-size: 0.9em;
   display: none;
-  float: right;
+  padding-left: 8px;
+  color: #525252;
 }
 
 .grid {
@@ -120,7 +132,7 @@ p {
 
 @media print {
   .resume {
-    font-size: 10px;
+    font-size: 9.5px;
   }
   ul {
     padding-left: 10px;
@@ -148,5 +160,10 @@ p {
   }
   .pdf {
     display: none;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
