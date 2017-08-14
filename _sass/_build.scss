@@ -22,8 +22,11 @@
   width: 100%;
   min-height: 100vh;
   color: $white;
-  background-color: #17D5CF;
+  background-color: #fbdbc4;
   background-image: url(/pattern2.svg);
+  background-repeat: repeat;
+  perspective: 5px;
+  perspective-origin: center;
 }
 
 .about__container {
@@ -34,8 +37,8 @@
   width: 100%;
   max-width: 1000px;
   padding: 8px;
-  background: linear-gradient(rgb(132, 77, 127), rgb(188, 103, 139));
-  box-shadow: 6px 6px 20px 4px rgba(0,0,0,0.3);
+  background: linear-gradient(248deg, #595071, #a2658d);
+  box-shadow: 6px 6px 20px 4px rgba(0,0,0,0.5);
 }
 
 .about__text {
@@ -47,9 +50,19 @@
   padding: 8px;
   padding-bottom: 64px;
   background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Arima Madurai', sans-serif;
   font-size: 1.1em;
   word-wrap: break-word;
+  will-change: transform, opacity;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateZ(10px);
+  transition: opacity 350ms ease-in,transform 300ms cubic-bezier(0.35, 0.51, 0.65, 1.07);
+
+  em {
+    font-family: inherit;
+    font-weight: 600;
+  }
 }
 
 .about__image {
@@ -61,10 +74,12 @@
   z-index: 10;
   bottom: -2%;
   right: -5%;
+  will-change: transform, opacity;
   opacity: 0;
   pointer-events: none;
-  transform: scale(0.2);
-  transition: opacity 300ms ease-in, transform 400ms cubic-bezier(0.35, 0.51, 0, 1.76);;
+  transform: translateZ(10px);
+  transition: opacity 300ms ease-in,transform 350ms cubic-bezier(0.34, 0.89, 1, 0.65);
+  transition-delay: 300ms;
 }
 
 @media (min-width: 600px) {
