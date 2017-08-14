@@ -14,36 +14,86 @@
 
 .about {
   position: relative;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  min-height: 100vh;
+  color: $white;
+  background-color: #17D5CF;
+  background-image: url(/pattern2.svg);
+}
+
+.about__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 1000px;
-  height: 400px;
-  margin: 0 auto;
-  color: $white;
-  background-image: url("/images/bilalK.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #8d4982;
-  background-position: right;
-}
-
-@media (min-width: 400px) {
-  .about {
-    background-size: contain;
-  }
-}
-
-.card__links {
-  position: absolute;
-  left: 20px;
-  bottom: 10px;
+  height: 100%;
+  padding: 8px;
+  background: linear-gradient(rgb(132, 77, 127), rgb(188, 103, 139));
+  box-shadow: 6px 6px 20px 4px rgba(0,0,0,0.3);
 }
 
 .about__text {
+  margin: 0;
+  color: black;
   width: 100%;
-  max-width: 500px;
-  font-family: 'Muli', sans-serif;
+  height: 100%;
+  min-height: 500px;
+  padding: 8px;
+  padding-bottom: 64px;
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1em;
+  word-wrap: break-word;
+}
+
+.about__image {
+  position: absolute;
+  box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.2);
+  max-width: 200px;
+  width: 30%;
+  border-radius: 50%;
+  z-index: 10;
+  bottom: -2%;
+  right: -5%;
+}
+
+@media (min-width: 600px) {
+  .about {
+    padding: 32px;
+  }
+  .about__container{
+    padding: 16px;
+  }
+  .about__text {
+    padding: 16px;
+  }
+  .about__image {
+    bottom: -10%;
+    right: -5%;
+  }
+}
+
+@media (min-width: 750px) {
+  .about {
+    padding: 64px;
+  }
+  .about__container{
+    padding: 32px;
+  }
+  .about__text {
+    padding: 32px;
+  }
+  .about__image {
+    bottom: -10%;
+    right: -5%;
+  }
 }
 
 .about__resume-link {
@@ -58,6 +108,12 @@
   &:visited {
     color: $white;
   }
+}
+
+.card__links {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
 }
 
 .scotland-yard {
