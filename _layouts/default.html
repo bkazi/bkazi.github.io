@@ -6,6 +6,9 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: "en-GB" }}">
 
   <head>
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="preload" href="/images/main.jpg" as="image">
+    <link rel="preload" href="/images/bilalK.jpg" as="image">
     {% include head.html %}
     <style type="text/css">
       {% capture include_to_scssify %}
@@ -13,6 +16,7 @@ layout: compress
       {% endcapture %}
       {{ include_to_scssify | scssify }}
     </style>
+    <script async defer src="/js/main.js"></script>
     {% seo title=false %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
@@ -22,7 +26,6 @@ layout: compress
       {{ content }}
     </main>
     <link rel="stylesheet" href="/css/main.css">
-    <script async src="/js/main.js"></script>
     {% include google-analytics.html %}
   </body>
 
