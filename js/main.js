@@ -63,23 +63,27 @@ function pictureReveal() {
     const image = document.querySelector('.about__image');
     const text = document.querySelector('.about__text');
     const listenerText = () => {
-        if (text.getBoundingClientRect().top - window.innerHeight <= -100) {
+        const clientRect = text.getBoundingClientRect();
+        if (clientRect.top > 0 && clientRect.top - window.innerHeight <= -100) {
             fadeIn(text);
             document.removeEventListener('scroll', listenerText);
         }
     };
 
     const listenerImage = () => {
-        if (image.getBoundingClientRect().top - window.innerHeight <= 0) {
+        const clientRect = image.getBoundingClientRect();
+        if (clientRect.top > 0 && clientRect.top - window.innerHeight <= 0) {
             fadeIn(image);
             document.removeEventListener('scroll', listenerImage);
         }
     };
 
-    if (text.getBoundingClientRect().top - window.innerHeight <= -100) {
+    const clientRectImage = image.getBoundingClientRect();
+    const clientRectText = text.getBoundingClientRect();
+    if (clientRectText.top > 0 && clientRectText.top - window.innerHeight <= -100) {
         fadeIn(text);
     } 
-    if (image.getBoundingClientRect().top - window.innerHeight <= 0) {
+    if (clientRectImage.top > 0 && image.getBoundingClientRect().top - window.innerHeight <= 0) {
         fadeIn(image);
     } else {
         document.addEventListener('scroll', listenerText, {passive: true});
