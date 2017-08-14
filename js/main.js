@@ -61,17 +61,29 @@ function revealIntroContent() {
 
 function pictureReveal() {
     const image = document.querySelector('.about__image');
-    const listener = () => {
-        if (image.getBoundingClientRect().top - window.innerHeight <= -50) {
-            fadeIn(image);
-            document.removeEventListener('scroll', listener);
+    const text = document.querySelector('.about__text');
+    const listenerText = () => {
+        if (text.getBoundingClientRect().top - window.innerHeight <= -100) {
+            fadeIn(text);
+            document.removeEventListener('scroll', listenerText);
         }
     };
 
+    const listenerImage = () => {
+        if (image.getBoundingClientRect().top - window.innerHeight <= 0) {
+            fadeIn(image);
+            document.removeEventListener('scroll', listenerImage);
+        }
+    };
+
+    if (text.getBoundingClientRect().top - window.innerHeight <= -100) {
+        fadeIn(text);
+    } 
     if (image.getBoundingClientRect().top - window.innerHeight <= 0) {
         fadeIn(image);
     } else {
-        document.addEventListener('scroll', listener, {passive: true});
+        document.addEventListener('scroll', listenerText, {passive: true});
+        document.addEventListener('scroll', listenerImage, {passive: true});
     }
 
 }
