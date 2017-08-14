@@ -62,6 +62,10 @@
   z-index: 10;
   bottom: -2%;
   right: -5%;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.2);
+  transition: opacity 300ms ease-in, transform 400ms cubic-bezier(0.35, 0.51, 0, 1.76);;
 }
 
 @media (min-width: 600px) {

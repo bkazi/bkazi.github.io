@@ -33,7 +33,7 @@ function lazyLoadImg() {
 }
 
 function revealIntroContent() {
-    const delay = 700;
+    const delay = 600;
     const introContent = document.querySelector('.intro__content');
 
     const heading1 = introContent.querySelector('h1');
@@ -63,7 +63,25 @@ function revealIntroContent() {
     }, delay * 4);
 }
 
+function pictureReveal() {
+    const image = document.querySelector('.about__image');
+    const listener = () => {
+        if (image.getBoundingClientRect().top - window.innerHeight <= -50) {
+            fadeIn(image);
+            document.removeEventListener('scroll', listener);
+        }
+    };
+
+    if (image.getBoundingClientRect().top - window.innerHeight <= 0) {
+        fadeIn(image);
+    } else {
+        document.addEventListener('scroll', listener, {passive: true});
+    }
+
+}
+
 window.onload = () => {
     lazyLoadImg();
     revealIntroContent();
+    pictureReveal();
 }
