@@ -9,25 +9,21 @@ function lazyLoadImg() {
     
     const onTransitionEnd = () => {
         lazyBg.remove();
-        newBg.classList.remove('fade-in');
-        newBg.style.willChange = '';
-        newBg.removeEventListener('transitionend', onTransitionEnd);
+        img.classList.remove('fade-in');
+        img.style.willChange = '';
+        img.removeEventListener('transitionend', onTransitionEnd);
     };
 
-    const newBg = document.createElement('div');
-    newBg.classList.add('background');
-    newBg.classList.add('fade-in');
-    newBg.style.willChange = 'opacity';
-    newBg.addEventListener('transitionend', onTransitionEnd);
-    newBg.style.backgroundImage = `url(${lazyBg.dataset.img})`;
-
-    // Load image to make sure it's in cache
     const img = new Image();
     img.src = lazyBg.dataset.img;
+    img.classList.add('background');
+    img.classList.add('fade-in');
+    img.style.willChange = 'opacity';
+    img.addEventListener('transitionend', onTransitionEnd);
     img.onload = () => {
-        lazyBg.insertAdjacentElement('afterend', newBg);
+        lazyBg.insertAdjacentElement('afterend', img);
         requestAnimationFrame(() => {
-            requestAnimationFrame(() => fadeIn(newBg));
+            requestAnimationFrame(() => fadeIn(img));
         });
     };
 }
