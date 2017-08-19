@@ -68,7 +68,12 @@ function pictureReveal() {
 
 }
 
-window.onload = () => {
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
     revealIntroContent();
     pictureReveal();
+} else {
+    document.addEventListener('DOMContentLoaded', (event) => {
+        revealIntroContent();
+        pictureReveal();
+    });
 }

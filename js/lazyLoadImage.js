@@ -28,6 +28,4 @@ function lazyLoadImg() {
     };
 }
 
-window.onload = () => {
-    lazyLoadImg();
-}
+lazyLoadImg();
