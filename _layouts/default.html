@@ -9,6 +9,7 @@ layout: compress
     <link rel="preload" href="/css/main.css" as="style">
     <link rel="preload" href="/images/main.jpg" as="image">
     <link rel="preload" href="/images/bilalK.jpg" as="image">
+    <script async src="/js/main.js"></script>
     {% include head.html %}
     <style type="text/css">
       {% capture include_to_scssify %}
@@ -16,7 +17,6 @@ layout: compress
       {% endcapture %}
       {{ include_to_scssify | scssify }}
     </style>
-    <script async defer src="/js/main.js"></script>
     {% seo title=false %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
