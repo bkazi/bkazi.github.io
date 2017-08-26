@@ -12,9 +12,9 @@ body {
 
 $black: #070606;
 $grey: #595959;
-$silver: #8E7C93;
+$silver: #64426C;
 $white: #FFFEFE;
-$red: #8E7C93;
+$red: #64426C;
 $green: #D0A5C0;
 
 @import 'https://fonts.googleapis.com/css?family=Lato:400,600|Playfair+Display:400|Roboto:500';
@@ -105,18 +105,18 @@ em {
 a {
 	color: $silver;
 	font-family: $base-font;
-	font-size: 0.95em;
 	font-weight: 600;
 	font-style: normal;
-	text-decoration: underline;
+	text-decoration: none;
+	border-bottom: 1px solid $silver;
 
   &:hover {
     font-family: $base-font;
-    font-size: 0.95em;
     font-weight: 600;
     color: $silver;
     font-style: normal;
-    text-decoration: none;
+	text-decoration: none;
+	border-bottom: none;
   }
 
   &:visited {
