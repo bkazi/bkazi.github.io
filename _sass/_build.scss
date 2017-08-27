@@ -37,7 +37,7 @@
   width: 100%;
   max-width: 1000px;
   padding: 8px;
-  background: linear-gradient(248deg, #595071, #a2658d);
+  background: linear-gradient(248deg, #55467C, $red);
   box-shadow: 6px 6px 20px 4px rgba(0,0,0,0.5);
 }
 
@@ -50,8 +50,7 @@
   padding: 8px;
   padding-bottom: 64px;
   background-color: white;
-  font-family: 'Arima Madurai', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.25em;
   word-wrap: break-word;
   will-change: transform, opacity;
   opacity: 0;
