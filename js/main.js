@@ -68,18 +68,28 @@ function pictureReveal() {
 }
 
 function routesListener() {
-    const writing = document.getElementById('writing');
-    const about = document.getElementById('about');
+    const ids = ['writing', 'faq'];
+    const map = new Map();
 
     const clickListener = (event) => {
         event.preventDefault();
         const selected = document.querySelector('.route.selected');
+        const currPathname = location.pathname;
+        const newPathname = new URL(event.target.href).pathname;
+        history.pushState({}, '', newPathname);
+        map.get(currPathname).classList.add('hidden');
+        map.get(newPathname).classList.remove('hidden');
         selected.classList.remove('selected');
         event.target.parentNode.classList.add('selected');
     };
 
-    writing.addEventListener('click', clickListener);
-    about.addEventListener('click', clickListener);
+    ids.forEach((id) => {
+        const link = document.getElementById(id);
+        const dom = document.querySelector(`.${id}`);
+        map.set(new URL(link.href).pathname, dom);
+        link.addEventListener('click', clickListener);
+        return link;
+    });
 }
 
 function go() {
