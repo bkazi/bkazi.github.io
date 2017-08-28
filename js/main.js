@@ -38,6 +38,7 @@ function revealIntroContent() {
 function pictureReveal() {
     const image = document.querySelector('.about__image');
     const text = document.querySelector('.about__text');
+    if (!image || !text) return;
     const listenerText = () => {
         const clientRect = text.getBoundingClientRect();
         if (clientRect.top > 0 && clientRect.top - window.innerHeight <= -100) {
@@ -77,8 +78,14 @@ function routesListener() {
         const currPathname = location.pathname;
         const newPathname = new URL(event.target.href).pathname;
         history.pushState({}, '', newPathname);
-        map.get(currPathname).classList.add('hidden');
+        map.get(currPathname).classList.add('route-hidden');
         map.get(newPathname).classList.remove('hidden');
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                map.get(currPathname).classList.add('hidden');
+                map.get(newPathname).classList.remove('route-hidden');
+            });
+        });
         selected.classList.remove('selected');
         event.target.parentNode.classList.add('selected');
     };
