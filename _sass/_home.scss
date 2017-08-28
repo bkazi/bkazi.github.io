@@ -49,8 +49,8 @@
   font-family: $accent-font;
   opacity: 0;
   pointer-events: none;
-  transform: translateY(10px);
-  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  transform: scale(0.9);
+  transition: transform 400ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 h1.intro__heading {
@@ -59,6 +59,7 @@ h1.intro__heading {
 
 h2.intro__heading {
   font-size: 1.4em;
+  transform: translateY(10px);
 }
 
 .intro__paragraph {
@@ -95,6 +96,12 @@ h2.intro__heading {
   }
 }
 
+.intro__extra {
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+}
+
 .intro__resume-link {
   position: relative;
   color: $red;
@@ -117,7 +124,7 @@ h2.intro__heading {
 
   &:hover {
     font-size: 1.1rem;
-    transform: translate(-3px, -3px) !important;
+    transform: translate(-4px, -4px) !important;
     box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.5);
   }
 }
@@ -150,6 +157,7 @@ h2.intro__heading {
 }
 
 .content {
+  width: 100%;
   max-width: 1000px;
   padding: 0;
   margin: 0 auto;
@@ -160,12 +168,59 @@ h2.intro__heading {
   flex-wrap: wrap;
 }
 
-.content--horizontal {
+.writing {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content__desc {
+  width: 100%;
+  padding: 16px;
+
+  p, p:visited, p:active, p:focus, p:hover {
+    font-size: 1em;
+    text-decoration: none;
+  }
+}
+
+.content__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.content--horizontal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
 
   @media (min-width: 700px) {
     flex-direction: row;
+    .content__img {
+      width: 50%;
+    }
+    .content__desc {
+      width: 50%;
+    }
+  }
+}
+
+.content--vertical {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+
+  @media (min-width: 700px) {
+    width: 50%;
   }
 }
 
@@ -224,7 +279,7 @@ h2.intro__heading {
   width: 30px;
   height: 30px;
   bottom: 2%;
-  right: 25%;
+  left: 25%;
   will-change: transform;
   animation: point 0.7s cubic-bezier(0.12, 0.88, 0.34, 0.85) alternate infinite;
   

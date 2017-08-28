@@ -8,14 +8,16 @@ layout: default
     <h1 class="intro__heading"><strong>Bilal Kazi</strong></h1>
     <h2 class="intro__heading">I study <strong>Computer Science</strong></h2>
     <p class="intro__paragraph">I design and build, apps and experiences.</p>
-    <a class="intro__resume-link" href="/resume/">R&eacute;sum&eacute;</a>
-    <div class="intro__links">
-      {% include icon-linkedin.html username="bkazi" class="icon--2x icon--white" %}
-      {% include icon-github.html username="bkazi" class="icon--2x icon--white" %}
-      {% include icon-codepen.html username="bkazi" class="icon--2x icon--white" %}
-      {% include icon-medium.html username="bkazi" class="icon--2x icon--white" %}
-      <!--{% include icon-behance.html username="bilalahmed7ce6" class="icon--2x icon--white" %}-->
-      {% include icon-instagram.html username="bkazi15" class="icon--2x icon--white" %}
+    <div class="intro__extra">
+      <a class="intro__resume-link" href="/resume/">R&eacute;sum&eacute;</a>
+      <div class="intro__links">
+        {% include icon-linkedin.html username="bkazi" class="icon--2x icon--white" %}
+        {% include icon-github.html username="bkazi" class="icon--2x icon--white" %}
+        {% include icon-codepen.html username="bkazi" class="icon--2x icon--white" %}
+        {% include icon-medium.html username="bkazi" class="icon--2x icon--white" %}
+        <!--{% include icon-behance.html username="bilalahmed7ce6" class="icon--2x icon--white" %}-->
+        {% include icon-instagram.html username="bkazi15" class="icon--2x icon--white" %}
+      </div>
     </div>
   </div>
   <div class="arrow"></div>
@@ -34,23 +36,33 @@ layout: default
       <span class="route selected"><a id="writing" href="/">Writing</a></span>
       <span class="route"><a id="about" href="#about">About</a></span>
     </div>
-    <a class="card--link scotland-yard full-width" href="{% post_url 2016-09-04-scotland-yard %}">
-      <h3>Scotland Yard - Case Study</h3>
-      <div class="card__links">
-        Post
-      </div>
-    </a>
-    <div class="content content--horizontal">
-      <a class="card--link medium-card half-width" href="https://medium.com/@bkazi/cache-management-in-an-offline-web-app-eee866fafa5c">
-        <h3>Cache Management in an Offline Web App</h3>
-        <div class="card__links">
-          Medium
+    <div class="writing">
+      <a class="content--horizontal" href="{% post_url 2016-09-04-scotland-yard %}">
+        <div class="content__img">
+          <img src="/images/scotlandYard.jpg"/>
+        </div>
+        <div class="content__desc">
+          <h3>Scotland Yard - Case Study</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+          <span>Post</span>
         </div>
       </a>
-      <a class="card--link medium-card half-width" href="https://medium.com/@bkazi/understanding-icons-36d07c8478fd">
-        <h3>Understanding Icons</h3>
-        <div class="card__links">
-          Medium
+      <a class="content--vertical" href="https://medium.com/@bkazi/cache-management-in-an-offline-web-app-eee866fafa5c">
+        <div class="content__img">
+            <img src="/images/cache-management.jpg"/>
+        </div>
+        <div class="content__desc">
+          <h3>Cache Management in an Offline Web App</h3>
+          <span>Medium</span>
+        </div>
+      </a>
+      <a class="content--vertical" href="https://medium.com/@bkazi/understanding-icons-36d07c8478fd">
+        <div class="content__img">
+            <img src="/images/understanding-icons.jpg"/>
+        </div>
+        <div class="content__desc">
+          <h3>Understanding Icons</h3>
+          <span>Medium</span>
         </div>
       </a>
     </div>
