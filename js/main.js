@@ -5,7 +5,7 @@ function fadeIn(element) {
 }
 
 function revealIntroContent() {
-    const delay = 600;
+    const delay = 700;
     const introContent = document.querySelector('.intro__content');
 
     const heading1 = introContent.querySelector('h1');
