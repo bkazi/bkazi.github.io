@@ -3,7 +3,6 @@ $dark: #262626;
 .intro {
   width: 100%;
   height: 100vh;
-  padding: 5px;
   text-align: right;
   display: flex;
   align-items: center;
@@ -58,11 +57,11 @@ $dark: #262626;
 
 h1.intro__heading {
   color: darken($dark, 50%);
-  font-size: 2.5em;
+  font-size: 2.8em;
 }
 
 h2.intro__heading {
-  font-size: 1.4em;
+  font-size: 1.6em;
   transform: translateY(10px);
 }
 
@@ -70,6 +69,7 @@ h2.intro__heading {
   margin-top: 0px;
   font-family: $accent-font;
   font-weight: 600;
+  font-size: 1.2em;
   opacity: 0;
   pointer-events: none;
   transform: translateY(10px);
@@ -78,25 +78,25 @@ h2.intro__heading {
 
 @media (min-width: 750px) {
   .intro__paragraph {
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
   h1.intro__heading {
-    font-size: 4em;
+    font-size: 4.2em;
   }
   h2.intro__heading {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 }
 
 @media (min-width: 1000px) {
   .intro__paragraph {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
   h1.intro__heading {
-    font-size: 4.1em;
+    font-size: 4.5em;
   }
   h2.intro__heading {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 }
 
