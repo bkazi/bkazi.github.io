@@ -12,12 +12,12 @@ body {
 
 $black: #070606;
 $grey: #595959;
-$silver: darken(#02A493, 15%);
+$silver: darken(#02A493, 18%);
 $white: #FFFEFE;
-$red: darken(#02A493, 15%);
+$red: darken(#02A493, 18%);
 $green: #D0A5C0;
 
-@import 'https://fonts.googleapis.com/css?family=Lato:400,600|Playfair+Display:400|Roboto:500';
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:400';
 
 $base-font: 'Lato', sans-serif;
 $heading-font: 'Playfair Display', serif;
