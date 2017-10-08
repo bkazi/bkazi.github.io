@@ -73,7 +73,7 @@ p {
 .secondary {
   font-size: 0.9em;
   font-weight: 300;
-  color: #888;
+  color: #505050;
 }
 
 .time {
@@ -158,7 +158,9 @@ p {
     column-count: 2;
   }
   :root {
-    font-size: 10.5px;
+    font-size: 11.5px;
+  }
+  body {
     line-height: 1.3;
   }
   .pdf {
