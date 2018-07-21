@@ -3,187 +3,234 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en-GB" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en-GB " }}">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#FFFAFA">
-    <title>Resume</title>
-    <style type="text/css">
-      {% capture include_to_scssify %}
-        {% include critical_resume.scss %}
-      {% endcapture %}
-      {{ include_to_scssify | scssify }}
-    </style>
-    {% seo title=false %}
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFAFA">
+  <title>Resume</title>
+  <style type="text/css">
+    {% capture include_to_scssify %}
+      {% include critical_resume.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+  {% seo title=false %}
+</head>
 
-  <body>
+<body>
 
-    <main class="container resume" aria-label="Content">
-      <div class="details">
-        <h1 class="name">Bilal Kazi</h1>
-        <p class="info">
-          Website: <a href="/">bkazi.github.io</a><br>
-          email: <a href="mailto:bilalahmedkazi@hotmail.com">bilalahmedkazi@hotmail.com</a><br>
-          LinkedIn: <a href="https://uk.linkedin.com/in/bkazi">uk.linkedin.com/in/bkazi</a> | Github: <a href="https://www.github.com/bkazi">bkazi</a><br>
-          Mobile: (+44) 7480681654
+  <main class="container resume" aria-label="Content">
+    <div class="details">
+      <h1 class="name">Bilal Kazi</h1>
+      <p class="info">
+        Website:
+        <a href="/">bkazi.github.io</a>
+        <br> email:
+        <a href="mailto:bilalahmedkazi@hotmail.com">bilalahmedkazi@hotmail.com</a>
+        <br> LinkedIn:
+        <a href="https://uk.linkedin.com/in/bkazi">uk.linkedin.com/in/bkazi</a> | Github:
+        <a href="https://www.github.com/bkazi">bkazi</a>
+        <br>
+      </p>
+    </div>
+    <div class="top">
+      <div class="education">
+        <h3 class="heading">Education</h3>
+        <ul>
+          <li>
+            <div class="list__details">
+              <strong>M.Eng. Computer Science (Ongoing)</strong>
+              <span class="time secondary"> &middot; September 2015 - July 2019</span>
+            </div>
+            <p>
+              <em>Completed Year 1, 2, and 3 with a 2:1</em>
+              <br> University of Bristol - Bristol, United Kingdom
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3 class="heading">Skills</h3>
+        <ul>
+          <li>
+            <p>
+              <strong>Proficient:</strong> JavaScript, Java, C/C++, Python, Haskell, HTML & CSS (Sass), SQL, Git</p>
+          </li>
+          <li>
+            <p>
+              <strong>Familiar:</strong> R, Julia, Swift, C#, Ruby, MongoDB, MATLAB</p>
+          </li>
+          <li>
+            <p>
+              <strong>SDKs and Frameworks:</strong> React, Tensorflow, Android, Jasmine, Enzyme, Polymer</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3 class="heading">Experience</h3>
+      <ul>
+        <li>
+          <div class="list__details">
+            <strong>Amazon</strong>
+            <span class="time secondary"> &middot; June 2018 - September 2018</span>
+          </div>
+          <p>Software Development Engineer Internship</p>
+        </li>
+        <li>
+          <div class="list__details">
+            <strong>Teaching Assistant</strong>
+            <span class="time secondary"> &middot; January 2018 - April 2018</span>
+          </div>
+          <p>
+            Assisted with lab sessions of the Database and Cloud Concepts unit at the University of Bristol.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="heading">Additional Certifications</h3>
+      <div class="grid">
+        <p>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/GCJMMNZJ8AJT">Deep Learning Specialization</a>
+          <br>deeplearning.ai
+          <span class="secondary"> &middot; Coursera</span>
+        </p>
+        <p>
+          <a href="https://www.credential.net/gzp6bb6j">Associate Android Developer</a>
+          <br>Google Developers Certification</p>
+        <p>
+          <a href="https://www.coursera.org/account/accomplishments/certificate/ADJ5K5H8WWYQ">Machine Learning</a>
+          <br>Stanford University
+          <span class="secondary"> &middot; Coursera</span>
+        </p>
+        <p>
+          <a href="http://university.mongodb.com/course_completion/69c9545f86304f99bd9ab782d336b2b9">M101JS: MongoDB for Node.js developers</a>
+          <br>MongoDB University</p>
+        <p>
+          <a href="https://verify.edx.org/cert/4ca4b6a442ba499a8c3533684c16bb97">Introduction to R</a>
+          <br>Microsoft
+          <span class="secondary"> &middot; edX</span>
         </p>
       </div>
-      <div class="top">
-        <div class="education">
-          <h3 class="heading">Education</h3>
-          <ul>
-            <li>
-              <div class="list__details">
-                <strong>M.Eng. Computer Science (Ongoing)</strong>
-                <span class="time secondary"> &middot; September 2015 - July 2019</span>
-              </div>
-              <p>
-                <em>Completed Year 1 and 2 with a 2:1</em><br>
-                University of Bristol - Bristol, United Kingdom
-              </p>
-            </li>
+    </div>
+    <div>
+      <h3 class="heading">Projects</h3>
+      <ul>
+        <li>
+          <div class="list__details">
+            <strong>Disparity</strong>
+            <span class="secondary"> &middot; Team of 6</span>
+          </div>
+          <ul class="bullets">
+            <li>Developed a multiplayer Augmented Reality game as part of the Games Project</li>
+            <li>Using Unity game engine and C# for the game mechanics and Vuforia for AR</li>
+            <li>Implemented user flow and networking through the game and set up shaders and materials. Also performed investigation
+              into performance optimisations that resulted in a significant boost in speed.</li>
           </ul>
-        </div>
-        <div class="skills">
-          <h3 class="heading">Skills</h3>
-          <ul>
-            <li>
-              <p><strong>Proficient:</strong> JavaScript, Java, C, Python, Haskell, HTML & CSS (Sass), Git</p>
-            </li>
-            <li>
-              <p><strong>Familiar:</strong> R, Ruby, SQL, MongoDB, MATLAB</p>
-            </li>
-            <li>
-              <p><strong>SDKs and Frameworks:</strong> React, Tensorflow, Android, Jasmine, Enzyme, Polymer</p>
-            </li>
+        </li>
+        <li>
+          <div class="list__details">
+            <strong>Kukatune</strong>
+            <span class="secondary"> &middot; Team of 6</span>
+          </div>
+          <ul class="bullets">
+            <li>Awarded 80% after scaling for relative contribution within the team</li>
+            <li>A music request web app developed for a client as part of the Software Engineering Project</li>
+            <li>Used React, Redux, Webpack, GraphQL, and ExpressJS</li>
+            <li>Social media aspects like a feed and location based event recommendation</li>
+            <li>Responsible for front end design and animations and implementing offline functionality using Service Worker</li>
           </ul>
-        </div>
-      </div>
-      <div >
-        <h3 class="heading">Experience</h3>
-        <ul>
-          <li>
-            <div class="list__details">
-              <strong>Teaching Assistant</strong>
-              <span class="time secondary"> &middot; January 2018 - April 2019</span>
-            </div>
-            <p>
-              Assisted with lab sessions of the Database and Cloud Concepts unit at the University of Bristol.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="heading">Additional Certifications</h3>
-        <div class="grid">
-            <p><a href="https://www.credential.net/gzp6bb6j">Associate Android Developer</a><br>Google Developers Certification</p>
-            <p><a href="https://www.coursera.org/account/accomplishments/verify/TX4JVSLANP47">Neural Networks and Deep Learning</a><br>deeplearning.ai<span class="secondary"> &middot; Coursera</span></p>
-            <p><a href="https://www.coursera.org/account/accomplishments/verify/767GAWNDKEQJ">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</a><br>deeplearning.ai<span class="secondary"> &middot; Coursera</span></p>
-            <p><a href="https://www.coursera.org/account/accomplishments/verify/7KTASUJ9L45F">Structuring Machine Learning Projects</a><br>deeplearning.ai<span class="secondary"> &middot; Coursera</span></p>
-            <p><a href="https://www.coursera.org/account/accomplishments/certificate/ADJ5K5H8WWYQ">Machine Learning</a><br>Stanford University<span class="secondary"> &middot; Coursera</span></p>
-            <p><a href="http://university.mongodb.com/course_completion/69c9545f86304f99bd9ab782d336b2b9">M101JS: MongoDB for Node.js developers</a><br>MongoDB University</p>
-            <p><a href="https://verify.edx.org/cert/4ca4b6a442ba499a8c3533684c16bb97">Introduction to R</a><br>Microsoft<span class="secondary"> &middot; edX</span></p>
-            <p><strong>Ruby on Rails: An Introduction</strong><br>Johns Hopkins University<span class="secondary"> &middot; Coursera</span></p>
-        </div>
-      </div>
-      <div>
-        <h3 class="heading">Projects</h3>
-        <ul>
-          <li>
-            <div class="list__details">
-              <strong>Kukatune</strong><span class="secondary"> &middot; Team of 6</span>
-            </div>
-            <ul class="bullets">
-              <li>Awarded 80% after scaling for relative contribution within the team</li>
-              <li>A music request web app developed for a client as part of the Software Engineering Project</li>
-              <li>Used React, Redux, Webpack, GraphQL, and ExpressJS</li>
-              <li>Social media aspects like a feed and location based event recommendation</li>
-              <li>Responsible for front end design and animations and implementing offline functionality using Service Worker</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list__details">
-              <strong><a href="https://github.com/bkazi/react-layout-transition">React Layout Transition</a></strong>
-            </div>
-            <ul class="bullets">
-              <li>An open source library for simplifying layout transitions in React</li>
-              <li>Created the library to improve the developer experience around animations on the web</li>
-              <li>Uses TypeScript for static type checking and Jasmine and Enzyme for testing</li>
-              <li>Github Stars: 39</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list__details">
-              <strong>Recycling Android App</strong><span class="secondary"> &middot; Team of 5</span>
-            </div>
-            <ul class="bullets">
-              <li>Won the prize for Best Environmental Impact in the 24 hr. Hackathon by Boeing and Computer Science Society Bristol held in February 2017</li>
-              <li>Android app that gives users information on how to recycle items by scanning their barcode and using current location for local council recycling rules</li>
-              <li>Responsible for implementing the views of the app and handling data flow between app and server</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list__details">
-              <strong><a href="{% post_url 2016-09-04-scotland-yard %}">Scotland Yard Game Project</a></strong><span class="secondary"> &middot; Team of 2</span>
-            </div>
-            <ul class="bullets">
-              <li>Awarded 75% for the project</li>
-              <li>Coursework for the Programming and Algorithms unit which involved creation of the model of the Scotland Yard board game to complete the provided MVC framework and an AI system to play the game.</li>
-              <li>Implemented the use of ThreadPools and other classes from the Concurrent package to improve performance of the Monte Carlo tree search algorithm along with heuristically scoring each board.</li>
-            </ul>
-          </li>
-          <li>
-            <div class="list__details">
-              <strong><a href="http://www.betteringmagazine.co.uk">Bettering Magazine Website</a></strong>
-            </div>
-            <ul class="bullets">
-              <li>Created the website of Bettering Magazine, a non-profit magazine based in Bristol which helps local charities.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="heading">Involvements</h3>
-        <ul>
-          <li>
-            <div class="list__details">
-              <strong>Manor JCR Committee</strong>
-              <span class="time secondary"> &middot; May 2016 - April 2018</span>
-            </div>
-            <p>
-              Serving as President (2017/18) of a committee of 15 memebers that handles the social and recreational activities of around 380 undergraduate residents of Manor Hall of University of Bristol.<br />
-              Previously served as an International Representative with the special duty towards international students.
-            </p>
-          </li>
-          <li>
-            <div class="list__details">
-              <strong><a href="http://www.digimakers.co.uk">DigiMakers Bristol</a></strong>
-              <span class="time secondary"> &middot; October 2015 - present</span>
-            </div>
-            <p>
-              Conducts workshops for children aged 7 – 17 where they are given an introduction to creating websites using HTML and CSS with the help of Bootstrap
-            </p>
-          </li>
-          <li>
-            <div class="list__details">
-              <strong>Volunteer at Anant Vikas - Mind Genius Trust Initiative</strong>
-              <span class="time secondary"> &middot; June 2013 - January 2014</span>
-            </div>
-            <p>
-              Student volunteer at Anant Vikas who along with United Nation Volunteers addresses challenges of extreme poverty and rural development in India
-            </p>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <a class="pdf" href="./Bilal-Kazi-Resume.pdf">
-      View as PDF
-    </a>
-    {% include google-analytics.html %}
-  </body>
+        </li>
+        <li>
+          <div class="list__details">
+            <strong>
+              <a href="https://github.com/bkazi/react-layout-transition">React Layout Transition</a>
+            </strong>
+          </div>
+          <ul class="bullets">
+            <li>An open source library for simplifying layout transitions in React</li>
+            <li>Created the library to improve the developer experience around animations on the web</li>
+            <li>Uses TypeScript for static type checking and Jasmine and Enzyme for testing</li>
+            <li>Github Stars: 46</li>
+          </ul>
+        </li>
+        <li>
+          <div class="list__details">
+            <strong>Recycling Android App</strong>
+            <span class="secondary"> &middot; Team of 5</span>
+          </div>
+          <ul class="bullets">
+            <li>Won the prize for Best Environmental Impact in the 24 hr. Hackathon by Boeing and Computer Science Society Bristol
+              held in February 2017</li>
+            <li>Android app that gives users information on how to recycle items by scanning their barcode and using current
+              location for local council recycling rules</li>
+            <li>Responsible for implementing the views of the app and handling data flow between app and server</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="heading">Awards</h3>
+      <ul>
+        <li>
+          <div class="list__details">
+            <strong>Elton House Award</strong>
+            <span class="time secondary"> &middot; June 2018</span>
+          </div>
+          <p>
+            The Elton House Award is given by the Manor Hall Association annually to an individual who has made an outstanding contribution
+            to Manor Hall over the last year.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="heading">Involvements</h3>
+      <ul>
+        <li>
+          <div class="list__details">
+            <strong>Manor Hall JCR Committee</strong>
+            <span class="time secondary"> &middot; May 2016 - April 2018</span>
+          </div>
+          <p>
+            Serving as President (2017/18) of a committee of 15 memebers that handles the social and recreational activities of around
+            380 undergraduate residents of Manor Hall of University of Bristol.
+            <br /> Previously served as an International Representative with the special duty towards international students.
+          </p>
+        </li>
+        <li>
+          <div class="list__details">
+            <strong>
+              <a href="http://www.digimakers.co.uk">DigiMakers Bristol</a>
+            </strong>
+            <span class="time secondary"> &middot; October 2015 - June 2017</span>
+          </div>
+          <p>
+            Conducted workshops for children aged 7 – 17 where they were given an introduction to creating websites using HTML and CSS
+            with the help of Bootstrap
+          </p>
+        </li>
+        <li>
+          <div class="list__details">
+            <strong>Volunteer at Anant Vikas - Mind Genius Trust Initiative</strong>
+            <span class="time secondary"> &middot; June 2013 - January 2014</span>
+          </div>
+          <p>
+            Student volunteer at Anant Vikas who along with United Nation Volunteers addresses challenges of extreme poverty and rural
+            development in India
+          </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <a class="pdf" href="./Bilal-Kazi-Resume.pdf">
+    View as PDF
+  </a>
+  {% include google-analytics.html %}
+</body>
 
 </html>
